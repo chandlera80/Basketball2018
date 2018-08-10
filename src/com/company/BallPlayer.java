@@ -1,39 +1,55 @@
 package com.company;
 
-public class BallPlayer
 
-{
-    private int START_POSITION = 0;
-    private int position;
-    private String name;
-    private int score;
 
-    public int getScore()
-    {
-        return score;
-    }
 
-    public BallPlayer(String name)
-    {
-        this.position = 0;
-        this.name = name;
-        score = 0;
-    }
 
-    public int otherPlayer()
-    {
 
-        return otherPlayer();
-    }
+       public class BallPlayer
+       {
+           private String name;
+           private int score;
+            private int position;
+           public BallPlayer(String name)
+           {
+               this.name = name;
+               score = 0;
+           }
+
+           public String getName()
+           {
+               return name;
+           }
+
+           public int getScore()
+           {
+               return score;
+           }
+
+           public void scorePoints(int points)
+           {
+               score += points;
+           }
+
+
+
+
+
+
+
+
+
+
 
     public int getPosition()
     {
         return position;
     }
 
-    public String getName()
+
+    public int getPlayerScore()
     {
-        return name;
+        return score;
     }
 
     public int getNextRollNeeded()
